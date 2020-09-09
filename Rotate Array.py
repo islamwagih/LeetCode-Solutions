@@ -4,7 +4,7 @@ class Solution(object):
         if size <= 1 or k == 0:
             return
         if k > size:
-            k-=size
+            k%=size
         arr = [0]*k
         j = 0
         for i in range(size-k,size):

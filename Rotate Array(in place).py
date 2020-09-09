@@ -14,8 +14,7 @@ class Solution(object):
         if size <= 1 or k == 0 or k%size == 0:
             return
         if k > size:
-            while k > size:
-                k-=size
+        	k%=size
         nums = self.reverse(nums)
         nums[:k] = self.reverse(nums[:k])
         nums[k:] = self.reverse(nums[k:])
