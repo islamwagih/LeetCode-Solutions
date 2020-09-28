@@ -1,10 +1,10 @@
 class Solution(object):
     def containsDuplicate(self, nums):
-        hashSet = set()
+        hashTable = dict()
         size = len(nums)
         for i in range(size):
-            if nums[i] in hashSet:
+            if hashTable.get(nums[i],False):
                 return True
-            hashSet.add(nums[i])
+            hashTable[nums[i]] = True
         return False
         
