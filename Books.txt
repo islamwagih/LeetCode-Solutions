@@ -100,3 +100,6 @@ JavaNotesForProfessionals.pdf
 JavaScriptNotesForProfessionals.pdf
 PythonNotesForProfessionals.pdf
 Modern Web Development_ Understanding domains, technologies, and user experience ( PDFDrive )
+Probability_ For the Enthusiastic Beginner
+Probability, Random Variables, and Random Processes_ Theory and Signal Processing Applications
+Elements of Probability and Statistics_ An Introduction to Probability with de Finetti's Approach and to Bayesian Statistics
