@@ -103,3 +103,23 @@ Modern Web Development_ Understanding domains, technologies, and user experience
 Probability_ For the Enthusiastic Beginner
 Probability, Random Variables, and Random Processes_ Theory and Signal Processing Applications
 Elements of Probability and Statistics_ An Introduction to Probability with de Finetti's Approach and to Bayesian Statistics
+Advanced C and C++ Compiling ( PDFDrive ).pdf
+C++ Concurrency in Action ( PDFDrive ).pdf
+C++ Design Generic Programming and Design Patterns Applied.pdf
+C++_In_Action.pdf
+Cplusplus17.The.Complete.Guide.396730017X.pdf
+desktop.ini
+Effective Modern C++_ 42 Specific Ways to Improve Your Use of C++11 and C++14 ( PDFDrive ).pdf
+Head First C# ( PDFDrive ).pdf
+Head First Data Analysis_ A Learner's Guide to Big Numbers, Statistics, and Good Decisions ( PDFDrive ).pdf
+Head First Design Patterns - U-Cursos ( PDFDrive ).pdf
+Head First Networking.pdf ( PDFDrive ).pdf
+Head First OOD & OOA.pdf
+Head First SQL - v2.pdf ( PDFDrive ).pdf
+Head First Statistics.pdf ( PDFDrive ).pdf
+newBooks.txt
+PointersAndMemory.pdf
+Python for Data Analysis ( PDFDrive ).pdf
+The C++ Programming.Language.4th.Edition.Jun.2013[A4].pdf
+Understanding and Using C Pointers ( PDFDrive ).pdf
+Understanding Pointers in C ( PDFDrive ).pdf
