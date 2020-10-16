@@ -123,3 +123,12 @@ Python for Data Analysis ( PDFDrive ).pdf
 The C++ Programming.Language.4th.Edition.Jun.2013[A4].pdf
 Understanding and Using C Pointers ( PDFDrive ).pdf
 Understanding Pointers in C ( PDFDrive ).pdf
+HTML5 graphing and data visualization cookbook
+Build your own 2D Game Engine and Create Great Web Games_ Using HTML5, JavaScript, and WebGL
+High_.Performance.Web_.Sites_.Sep_.2007
+Web Performance Daybook Volume 2_ Techniques and Tips for Optimizing Web Site Performance
+deeplearningwithpython
+Deep Learning with Applications Using Python
+Applied Deep Learning_ A Case-Based Approach to Understanding Deep Neural Networks
+Designing Web APIs_ Building APIs That Developers Love
+Even Faster Web Sites_ Performance Best Practices for Web Developers
