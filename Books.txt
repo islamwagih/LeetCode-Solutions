@@ -132,3 +132,4 @@ Deep Learning with Applications Using Python
 Applied Deep Learning_ A Case-Based Approach to Understanding Deep Neural Networks
 Designing Web APIs_ Building APIs That Developers Love
 Even Faster Web Sites_ Performance Best Practices for Web Developers
+You don't know JS series(6 books)
