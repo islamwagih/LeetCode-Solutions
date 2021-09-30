@@ -1,5 +1,5 @@
 class Solution:
-    def generate(self, numRows: int) -> List[List[int]]:
+    def generate(self, numRows: int) -> list[list[int]]:
         if numRows == 0:
             return []
         gList = [[1]];oldRow = 0
@@ -15,8 +15,3 @@ class Solution:
             gList.append(newArr)
             oldRow += 1
         return gList
-                
-            
-            
-        
-        
