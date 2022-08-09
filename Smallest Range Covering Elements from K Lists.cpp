@@ -1,12 +1,6 @@
 class Solution {
 public:
     vector<int> smallestRange(vector<vector<int>>& nums) {
-        if(nums.size() == 1){
-            vector<int> vec;
-            vec.push_back(nums[0][0]);
-            vec.push_back(nums[0][0]);
-            return vec;
-        }
         set<pair<int, pair<int, int>>> st;
         for(int i=0;i<nums.size();i++){
             pair<int, pair<int, int>> pr;
