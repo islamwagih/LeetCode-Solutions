@@ -1,39 +1,26 @@
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
-        vector<int> ans;
-        int m = matrix.size();
-        int n = matrix[0].size();
-        int sr,er,sc,ec;
-        sr = sc = 0;
-        er = m-1, ec = n-1;
-        int count = 0;
-        while(sr <= er && sc <= ec){
-            for(int i = sc; i <= ec;i++){
-                ans.push_back(matrix[sr][i]);
-                count++;
-            }
-            sr++;
-            if(count == m*n) return ans;
-            for(int i = sr; i <= er; i++){
-                ans.push_back(matrix[i][ec]);
-                count++;
-            }
-            ec--;
-            if(count == m*n) return ans;
-            for(int i = ec; i >= sc; i--){
-                ans.push_back(matrix[er][i]);
-                count++;
-            }
-            er--;
-            if(count == m*n) return ans;
-            for(int i = er; i >= sr; i--){
-                ans.push_back(matrix[i][sc]);
-                count++;
-            }
-            sc++;
-            if(count == m*n) return ans;
+        int o = 0, n = matrix.size(), m = matrix[0].size();
+        int sz = n*m;
+        vector<int> ret;
+        while(o < min(n, m))
+        {
+            int i = o;
+            while(i < m) ret.push_back(matrix[o][i++]);
+            if(ret.size() == sz) return ret;
+            i = o+1;
+            while(i < n) ret.push_back(matrix[i++][m-1]);
+            if(ret.size() == sz) return ret;
+            i = m-2;
+            while(i >= o) ret.push_back(matrix[n-1][i--]);
+            if(ret.size() == sz) return ret;
+            i = n-2;
+            while(i > o) ret.push_back(matrix[i--][o]);
+            if(ret.size() == sz) return ret;
+            n--, m--;
+            o++;
         }
-        return ans;   
+        return ret;
     }
 };
