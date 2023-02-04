@@ -4,7 +4,6 @@ class Solution
     {
         string replaced = "";
         int j = 0;
-        bool moved = false;
         for(int i=0;i<base.size();i++)
         {
             if(base[i] == sub[j])
@@ -12,7 +11,6 @@ class Solution
                 j++;
                 if(j == sub.size())
                 {
-                    moved = true;
                     j = 0;
                 }
             }else
@@ -21,7 +19,7 @@ class Solution
             }
            
         }
-        return moved;
+        return true;
     }
     bool validGCD(string first, string second, string& gcd)
     {
