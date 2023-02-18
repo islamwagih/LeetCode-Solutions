@@ -9,11 +9,19 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution {
-public:
-    int maxDepth(TreeNode* root)
+class Solution
+{
+    void invert(TreeNode* root)
     {
-        if(root == nullptr) return 0;
-        return max(1+maxDepth(root->right), 1+maxDepth(root->left));
+        if(root == nullptr) return;
+        swap(root->left, root->right);
+        invert(root->left);
+        invert(root->right);
+    }
+public:
+    TreeNode* invertTree(TreeNode* root)
+    {
+        invert(root);
+        return root;
     }
 };
