@@ -1,32 +1,21 @@
-class Solution {
-    int frq[26];
-    int mostFrq()
-    {
-        int mostf = 0;
-        for(int i=0;i<26;i++) mostf = max(mostf, frq[i]);
-        return mostf;
-    }
+class Solution
+{
 public:
-    int characterReplacement(string s, int k) {
-        int low = 0, high = 0, maxLen = 0;
-        frq[s[0]-'A']++;
-        int n = s.size(), mostf = 1;
-        while(high < n){
-            if((high-low+1)-mostf <= k)
+    int characterReplacement(string s, int k)
+    {
+        vector<int> cnt(26, 0);
+        int n = s.size(), ans = 0;
+        int left = 0, largestCnt = 0;
+        for(int right=0;right<n;right++)
+        {
+            largestCnt = max(largestCnt, ++cnt[s[right]-'A']);
+            int len = right-left+1;
+            if(len - largestCnt > k)
             {
-                high++;
-                maxLen = max(maxLen, high-low);
-                if(high != n){
-                    int currFrq = ++frq[s[high]-'A'];
-                    if(currFrq > mostf) mostf = currFrq;
-                }
-            }else
-            {
-                frq[s[low++]-'A']--;
-                mostf = mostFrq();
+                ans = max(ans, right - left);
+                --cnt[s[left++]-'A'];
             }
         }
-        return maxLen;
-
+        return max(ans, n - left);
     }
 };
